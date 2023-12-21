@@ -34,8 +34,8 @@ proc finish {} {
   close $tf
   close $nf
   exec nam p4.nam &
-  exec awk -f ex5transfer.awk ex5.tr &
-  exec awk -f ex5convert.awk ex5.tr > convert.tr &
+  exec awk -f p4transfer.awk p4.tr &
+  exec awk -f p4convert.awk p4.tr > convert.tr &
   exec xgraph convert.tr
   exit 0
 }
