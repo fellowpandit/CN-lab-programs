@@ -11,4 +11,11 @@ BEGIN{
   }
 }
 END{
+  if (count > 0) {
+    printf("\n\nTotal Bytes Received: %f MB\n", count/1000000);
+    printf("Simulation Duration: %f seconds\n", time);
+    printf("Average Throughput: %f Mbps\n", count / (time * 1000000));
+  } else {
+    print "No data received.";
+  }
 }
