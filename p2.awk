@@ -22,7 +22,7 @@ BEGIN{
   if (type == "tcp" && action == "r" && to == "3")
     tcp_sz += pkt_sz;
   total_sz += pkt_sz;
-  if (type == "ack" && action == "r" && += "3")
+  if (type == "ack" && action == "r" && == "3")
     ack_sz += pkt_sz;
   total_sz += pkt_sz;
 }
