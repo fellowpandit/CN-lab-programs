@@ -40,7 +40,7 @@ proc finish {} {
   exit 0
 }
 
-$ns at 0.01 "$ftp0 start"
-$ns at 15.0 "$ftp0 stop"
+$ns at 0.01 "$ftp start"
+$ns at 15.0 "$ftp stop"
 $ns at 15.1 "finish"
 $ns run
